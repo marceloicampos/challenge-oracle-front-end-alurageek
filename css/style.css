@@ -38,7 +38,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 32px 0;
     margin: 0 auto;
     max-width: 1136px;
@@ -83,10 +83,10 @@ body {
     align-items: center;
     padding: 16px 16px;
     margin: 0 16px;
-    width: 448px;
+    width: 65%;
     height: 48px;
     border-radius: 16px;
-    background: url('/images/icon-busca.svg') no-repeat right;
+    background: url(../images/icon-busca.svg) no-repeat right;
     background-origin: content-box;
     background-size: 24px;
     background-color: #f5f5f5;
@@ -131,7 +131,11 @@ body {
     padding: 32px;
     max-width: 1440px;
     height: 352px;
-    background: url('/images/banner-image.png') no-repeat 50% 50%;
+    background-image: url(../images/banner-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     align-self: stretch;
 }
 
@@ -187,16 +191,7 @@ footer {
     background-color: red;
 }
 
-@media (max-width: 864px) {
-    .nav-search-bar {
-        order: 2;
-    }
-    .nav-button-login {
-        order: 1;
-    }
-}
-
-@media (max-width: 384px) {
+@media (max-width: 1120px) {
     .nav-search-bar {
         order: 2;
     }
