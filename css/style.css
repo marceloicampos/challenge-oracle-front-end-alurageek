@@ -5,8 +5,6 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-style: normal;
 }
 
 body {
@@ -15,6 +13,8 @@ body {
     align-items: center;
     margin: 0 auto;
     max-width: 1440px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
     background-color: #f5f5f5;
 }
 
@@ -33,7 +33,7 @@ body {
     align-self: stretch;
 }
 
-.nav-section {
+.nav-sub-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -54,30 +54,30 @@ body {
     order: 0;
 }
 
-.logo-section {
+.nav-logo-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 32px 0 0;
-    margin: 16px 32px 16px 16px;
+    margin: 16px;
 }
 
-.logo-store {
+.nav-logo-store {
     height: 50px;
     width: 50px;
 }
 
-.logo-alura {
+.nav-logo-alura {
     height: 16px;
     width: 64px;
 }
 
-.logo-geek {
+.nav-logo-geek {
     height: 16px;
     width: 64px;
 }
 
-.bar-left {
+.nav-search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,7 +99,7 @@ body {
     order: 1;
 }
 
-.button-login {
+.nav-button-login {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,10 +117,10 @@ body {
     order: 2;
 }
 
-.button-login:hover {
+.nav-button-login:hover {
     font-weight: 600;
-    border: 1px solid #a2a2a2;
-    background-color: #f5f5f5;
+    border: 1px solid #2a7ae4;
+    background-color: #d4e4fa;
 }
 
 .banner-top-section {
@@ -130,8 +130,53 @@ body {
     align-items: center;
     padding: 32px;
     max-width: 1440px;
-    background: url('/images/banner-image.png') no-repeat;
+    height: 352px;
+    background: url('/images/banner-image.png') no-repeat 50% 50%;
     align-self: stretch;
+}
+
+.banner-sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 1136px;
+    align-self: stretch;
+}
+
+.banner-titulo {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: #ffffff;
+}
+
+.banner-texto {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    margin: 16px 0;
+}
+
+.banner-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 140px;
+    height: 48px;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background: #2a7ae4;
+}
+
+.banner-button:hover {
+    background-color: #5595e9;
 }
 
 main {
@@ -142,20 +187,20 @@ footer {
     background-color: red;
 }
 
-@media (max-width: 867px) {
-    .bar-left {
+@media (max-width: 864px) {
+    .nav-search-bar {
         order: 2;
     }
-    .button-login {
+    .nav-button-login {
         order: 1;
     }
 }
 
 @media (max-width: 384px) {
-    .bar-left {
+    .nav-search-bar {
         order: 2;
     }
-    .button-login {
+    .nav-button-login {
         order: 1;
     }
 }
