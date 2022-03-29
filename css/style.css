@@ -132,7 +132,6 @@ body {
     max-width: 1440px;
     background: url('/images/banner-image.png') no-repeat;
     align-self: stretch;
-    background-color: brown;
 }
 
 main {
