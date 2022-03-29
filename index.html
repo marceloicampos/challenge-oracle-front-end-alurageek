@@ -9,25 +9,28 @@
         <title>Alura Geek - Challenge Front End Oracle ONE - Alura</title>
     </head>
     <body>
-        <header>
-            <h1>SECTION MENU</h1>
-            <img src="./images/logo-store.svg" alt="Logo Store" />
-            <img src="./images/logo-alura.svg" alt="Logo Alura" />
-            <img src="./images/logo-geek.svg" alt="Logo Geek" />
-            <input type="text" placeholder="O que deseja encontrar?" />
-            <img src="./images/icon-busca.svg" alt="Ícone Lupa" />
-            <button type="submit">Login</button>
-        </header>
-        <main>
-            <section>
-                <h1>SECTION BANNER</h1>
-                <img src="./images/banner-image.png" alt="Logo Banner" />
+        <header class="header-container">
+            <section class="nav-top-section">
+                <section class="nav-section">
+                    <aside class="nav-aside">
+                        <section class="logo-section">
+                            <img class="logo-store" src="./images/logo-store.svg" alt="Logo Store" />
+                            <img class="logo-alura" src="./images/logo-alura.svg" alt="Logo Alura" />
+                            <img class="logo-geek" src="./images/logo-geek.svg" alt="Logo Geek" />
+                        </section>
+                    </aside>
+                    <input class="bar-left" type="text" placeholder="O que deseja encontrar?" />
+                    <button class="button-login" type="submit">Login</button>
+                </section>
+            </section>
+            <section class="banner-top-section">
                 <h2>Dezembro Promocional</h2>
                 <p>Produtos selecionados com 33% de desconto</p>
                 <button type="submit">Ver Produtos</button>
             </section>
+        </header>
+        <main>
             <section>
-                <h1>SECTION GALERIA</h1>
                 <article>
                     <h2>Star Wars</h2>
                     <img src="./images/produto-star-wars.png" alt="Logo Produto" />
@@ -51,7 +54,6 @@
                 </article>
             </section>
             <section>
-                <h1>SECTION FORMULÁRIO</h1>
                 <img src="./images/logo-store.svg" alt="Logo Store" />
                 <img src="./images/logo-alura.svg" alt="Logo Alura" />
                 <img src="./images/logo-geek.svg" alt="Logo Geek" />
@@ -65,15 +67,12 @@
                 </ul>
                 <form action="">
                     <h2>Fale conosco</h2>
-                    <p>Nome:</p>
-                    <input type="text" placeholder="Nome" name="nome" />
+                    <label for="fnome">Nome:<input id="fnome" type="text" placeholder="Seu Nome" name="nome" /></label>
                     <textarea style="display: block" cols="30" rows="10" name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
                     <button type="submit">Enviar Mensagem</button>
                 </form>
             </section>
         </main>
-        <h1>SECTION RODAPÉ</h1>
         <footer>Desenvolvido por Marcelo Ildefonso Campos</footer>
-        <br /><br /><br />
     </body>
 </html>
