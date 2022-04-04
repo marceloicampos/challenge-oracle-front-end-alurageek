@@ -330,7 +330,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 0 16px;
+    margin: 0 0 0 8px;
     flex-grow: 1;
 }
 
@@ -353,7 +353,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px 16px;
+    margin: 8px 8px;
     flex-grow: 1;
 }
 
@@ -384,7 +384,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 16px;
+    margin: 0 8px 0 0;
     flex-grow: 2;
 }
 
@@ -571,10 +571,49 @@ body {
     text-decoration: underline;
 }
 
-/* CSS MEDIA AND TEXT RESOLUTION */
+/* CSS PÁGINA CONTATO SUCESSO*/
+
+.sucesso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.sucesso-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin-top: 16px;
+}
+
+.sucesso-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 16px 0;
+}
+
+.sucesso-link:hover {
+    text-decoration: underline;
+}
+
+/* CSS AJUSTE NAV SEARCH BAR E BANNER*/
 
 @media (max-width: 1120px) {
+    .nav-sub-section {
+        justify-content: space-between;
+    }
+
     .nav-search-bar {
+        display: block;
+        width: 100%;
         margin: 0 20px;
         order: 2;
     }
@@ -602,6 +641,8 @@ body {
     }
 }
 
+/* CSS AJUSTE DE ITENS LISTA DE PRODUTOS */
+
 @media (max-width: 1144px) {
     .list-none-44 {
         display: none;
@@ -614,11 +655,22 @@ body {
     }
 }
 
-@media(max-width:874px) {
-    .form-links-section {
-        flex-grow: 0;
+/* CSS AJUSTE DE INFOS E FORM CONTATO PARA TABLET*/
+
+@media (max-width: 874px) {
+    .form-top-section {
+        padding: 32px;
     }
-} 
+    .form-sub-section {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: 50px 250px;
+        grid-auto-columns: 100px;
+        grid-auto-flow: column;
+    }
+}
+
+/* CSS AJUSTE DE INFOS E FORM CONTATO PARA CELULAR*/
 
 @media (max-width: 559px) {
     .form-top-section {

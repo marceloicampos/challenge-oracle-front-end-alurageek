@@ -11,6 +11,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="./script.js"></script>
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Alura Geek - Challenge Front End Oracle ONE - Alura</title>
@@ -21,20 +22,20 @@
                 <section class="nav-sub-section">
                     <aside class="nav-aside">
                         <section class="nav-logo-section">
-                            <a href="./"><img class="nav-logo-store" src="./images/logo-store.svg" alt="Logo Store" /></a>
-                            <a href="./"><img class="nav-logo-alura" src="./images/logo-alura.svg" alt="Logo Alura" /></a>
-                            <a href="./"><img class="nav-logo-geek" src="./images/logo-geek.svg" alt="Logo Geek" /></a>
+                            <img class="nav-logo-store" src="./images/logo-store.svg" alt="Logo Store" />
+                            <img class="nav-logo-alura" src="./images/logo-alura.svg" alt="Logo Alura" />
+                            <img class="nav-logo-geek" src="./images/logo-geek.svg" alt="Logo Geek" />
                         </section>
                     </aside>
                     <input class="nav-search-bar" type="text" maxlength="80" id="busca" placeholder="O que deseja encontrar?" />
-                    <button class="nav-button-login" type="submit" id="login">Login</button>
+                    <button class="nav-button-login" type="submit" id="login" onclick="window.location.href='./login.html'">Login</button>
                 </section>
             </section>
             <section class="banner-top-section">
                 <section class="banner-sub-section">
                     <h2 class="banner-titulo">Dezembro Promocional</h2>
                     <p class="banner-texto">Produtos selecionados com até 33% de desconto</p>
-                    <button class="banner-button" type="submit">Ver Produtos</button>
+                    <button class="banner-button" type="submit" id="descontos" onclick="window.location.href='./descontos.html'">Ver Produtos</button>
                 </section>
             </section>
         </header>
@@ -43,7 +44,7 @@
                 <section class="produtos-top-container">
                     <h2 class="produtos-top-titulo">Star Wars</h2>
                     <div class="produtos-top-link">
-                        <a class="produtos-top-link-text" href="#"
+                        <a class="produtos-top-link-text" href="./produtos.html"
                             >Ver Tudo<img class="produtos-top-link-img" src="./images/icon-arrow.svg" alt="ícone seta link ver todos os produtos"
                         /></a>
                     </div>
@@ -53,37 +54,37 @@
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-1.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item">
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-2.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-3.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-4.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-5.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item-final list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-star-wars-6.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                 </section>
             </section>
@@ -91,7 +92,7 @@
                 <section class="produtos-top-container">
                     <h2 class="produtos-top-titulo">Consoles</h2>
                     <div class="produtos-top-link">
-                        <a class="produtos-top-link-text" href="#"
+                        <a class="produtos-top-link-text" href="./produtos.html"
                             >Ver Tudo<img class="produtos-top-link-img" src="./images/icon-arrow.svg" alt="ícone seta link ver todos os produtos"
                         /></a>
                     </div>
@@ -101,37 +102,37 @@
                         <img class="produtos-list-item-img" src="./images/produto-console-1.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item">
                         <img class="produtos-list-item-img" src="./images/produto-console-2.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-console-3.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-console-4.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-console-5.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item-final list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-console-6.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                 </section>
             </section>
@@ -139,7 +140,7 @@
                 <section class="produtos-top-container">
                     <h2 class="produtos-top-titulo">Diversos</h2>
                     <div class="produtos-top-link">
-                        <a class="produtos-top-link-text" href="#"
+                        <a class="produtos-top-link-text" href="./produtos.html"
                             >Ver Tudo<img class="produtos-top-link-img" src="./images/icon-arrow.svg" alt="ícone seta link ver todos os produtos"
                         /></a>
                     </div>
@@ -149,37 +150,37 @@
                         <img class="produtos-list-item-img" src="./images/produto-diversos-1.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item">
                         <img class="produtos-list-item-img" src="./images/produto-diversos-2.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-diversos-3.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-84">
                         <img class="produtos-list-item-img" src="./images/produto-diversos-4.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-diversos-5.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                     <div class="produtos-list-item-final list-none-44">
                         <img class="produtos-list-item-img" src="./images/produto-diversos-6.png" alt="Logo Produto" />
                         <p class="produtos-list-item-name">Nome Produto</p>
                         <p class="produtos-list-price">R$ 00,00</p>
-                        <a class="produtos-list-item-link" href="#">Ver Produto</a>
+                        <a class="produtos-list-item-link" href="./produtos.html">Ver Produto</a>
                     </div>
                 </section>
             </section>
@@ -198,7 +199,7 @@
                         <a class="form-links-itens" href="#">Quero ser um franqueado</a>
                         <a class="form-links-itens-final" href="#">Anuncie aqui</a>
                     </section>
-                    <form action="" method="POST" class="form-contato">
+                    <form action="./contato.html" class="form-contato" id="form" name="form">
                         <h2 class="form-contato-titulo">Fale conosco</h2>
                         <section class="form-contato-campos">
                             <div class="form-contato-input-nome">
@@ -224,11 +225,10 @@
                                     <div class="form-contato-elementos-mensagem">
                                         <textarea
                                             class="form-contato-textarea"
-                                            id="mensagem"
                                             cols="30"
                                             rows="3"
                                             maxlength="500"
-                                            itemid="mensagem"
+                                            id="mensagem"
                                             placeholder="Escreva sua mensagem"
                                             name="mensagem"
                                         ></textarea>
