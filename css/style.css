@@ -71,13 +71,13 @@ body {
 }
 
 .nav-logo-alura {
-    height: 16px;
-    width: 64px;
+    height: 19px;
+    width: 62px;
 }
 
 .nav-logo-geek {
-    height: 16px;
-    width: 64px;
+    height: 19px;
+    width: 62px;
 }
 
 .nav-search-bar {
@@ -221,17 +221,20 @@ body {
 }
 
 .produtos-top-link-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #2a7ae4;
-    margin: 0px 8px;
+    margin: 0 8px;
 }
 
 .produtos-top-link-img {
     width: 24px;
     height: 24px;
-    margin: 0px 8px;
+    margin: 0 8px;
 }
 
 .produtos-list-container {
@@ -239,15 +242,15 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    margin: 16px 16px;
+    justify-content: space-around;
+    margin: 0 4px;
 }
 
 .produtos-list-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 8px 0 0;
+    margin: 0 4px 0 0;
 }
 
 .produtos-list-item-final {
@@ -296,13 +299,13 @@ body {
     text-decoration: underline;
 }
 
-/* CSS FORMULÁRIO E INFORMAÇÕES */  
+/* CSS de INFORMAÇÕES e FORMULÁRIO DE CONTATO */
 
 .form-top-section {
     /* display: flex; */
     /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     padding: 64px;
     max-width: 1440px;
     background-color: #c2d9f8;
@@ -312,10 +315,10 @@ body {
 .form-sub-section {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    align-items: center;
     max-width: 1136px;
 }
 
@@ -323,7 +326,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 16px 0;
+    margin: 0 0 0 16px;
+    flex-grow: 1;
 }
 
 .form-logo-store {
@@ -332,23 +336,24 @@ body {
 }
 
 .form-logo-alura {
-    height: 16px;
-    width: 64px;
+    height: 19px;
+    width: 62px;
 }
 
 .form-logo-geek {
-    height: 16px;
-    width: 64px;
+    height: 19px;
+    width: 62px;
 }
 
 .form-links-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 16px 16px;
+    flex-grow: 1;
 }
 
 .form-links-itens {
-    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -360,10 +365,23 @@ body {
     text-decoration: underline;
 }
 
+.form-links-itens-final {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.form-links-itens-final:hover {
+    text-decoration: underline;
+}
+
 .form-contato {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 16px;
+    flex-grow: 2;
 }
 
 .form-contato-titulo {
@@ -372,27 +390,38 @@ body {
     line-height: 19px;
     color: #464646;
     align-self: stretch;
+    width: 100%;
 }
 
 .form-contato-campos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 8px 0px;
+    margin: 8px 0;
+    width: 100%;
 }
 
-.form-contato-nome {
+.form-contato-input-nome {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 0 16px 0;
-    background: #ffffff;
-    border-radius: 4px;
     align-self: stretch;
-    border-bottom: 1px solid #c8c8c8;
+    margin: 0 0 16px 0;
+    width: 100%;
 }
 
-.form-contato-elementos {
+.form-contato-caixa-nome {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    background-color: #ffffff;
+    border-radius: 4px;
+    border-bottom: 1px solid #c8c8c8;
+    align-self: stretch;
+    width: 100%;
+}
+
+.form-contato-elementos-nome {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -400,66 +429,92 @@ body {
     width: 100%;
 }
 
-.form-contato-inside {
+.form-contato-texto-nome {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
-.form-contato-texto {
+.form-contato-texto-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    display: flex;
-    align-items: center;
     color: #a2a2a2;
     align-self: stretch;
-    margin: 4px 0px;
+    margin: 8px 0 4px 0;
+    width: 100%;
 }
 
-.form-contato-input {
+.form-contato-texto-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
+    color: #464646;
     align-self: stretch;
+    padding: 0;
+    margin: 0 0 8px 0;
     border: none;
     outline: 0;
     width: 100%;
 }
 
-.form-contato-mensagem {
+.form-contato-texto-holder::placeholder {
+    color: #a2a2a2;
+}
+
+.form-contato-input-mensagem {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    background: #ffffff;
+    width: 100%;
+}
+
+.form-contato-caixa-mensagem {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    background-color: #ffffff;
     border-radius: 4px;
-    align-self: stretch;
     border-bottom: 1px solid #c8c8c8;
+    align-self: stretch;
+    width: 100%;
 }
 
 .form-contato-elementos-mensagem {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
     padding: 0px 12px;
+    width: 100%;
 }
 
 .form-contato-textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    color: #a2a2a2;
+    color: #464646;
     align-self: stretch;
+    padding: 0;
+    margin: 16px 0 0 0;
     border: none;
     outline: 0;
     resize: none;
     width: 100%;
+}
+
+.form-contato-textarea::placeholder {
+    color: #a2a2a2;
 }
 
 .form-contato-botao {
@@ -468,11 +523,16 @@ body {
     justify-content: center;
     align-items: center;
     padding: 16px;
-    width: 165px;
-    height: 51px;
-    color: #ffffff;
     background-color: #2a7ae4;
     border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.form-contato-botao:hover {
+    background-color: #5595e9;
 }
 
 /* CSS RODAPÉ */
@@ -511,6 +571,7 @@ body {
 
 @media (max-width: 1120px) {
     .nav-search-bar {
+        margin: 0 20px;
         order: 2;
     }
     .nav-button-login {
@@ -534,5 +595,48 @@ body {
     .banner-texto {
         font-size: 14px;
         line-height: 16px;
+    }
+}
+
+@media (max-width: 1144px) {
+    .list-none-44 {
+        display: none;
+    }
+}
+
+@media (max-width: 784px) {
+    .list-none-84 {
+        display: none;
+    }
+}
+
+@media(max-width:874px) {
+    .form-links-section {
+        flex-grow: 0;
+    }
+} 
+
+@media (max-width: 559px) {
+    .form-top-section {
+        padding: 16px;
+    }
+    .form-sub-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-logo-section {
+        margin: 0;
+    }
+    .form-links-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 16px 0;
+    }
+    .form-contato {
+        margin: 0;
+        flex-grow: 4;
     }
 }
