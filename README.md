@@ -1,5 +1,5 @@
-# challenge-oracle-front-end - Alura Geek
-Challenge Oracle Front End - Alura Geek
+# challenge-oracle-front-end
+Challenge Oracle Front End AluraGeek
 
 28/03/2022 - Inicio do Projeto
 
